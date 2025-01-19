@@ -28,8 +28,10 @@ sprite justice, *please* get in touch.)
 
 **Dependencies:** default, mobs (mobs_redo)
 
+## License
+
 * © 2018-2019 Hamlet <hamlatmesehub [at] riseup [dot] net> LGPL 2.1
 * © 2022-2025 fluxionary LGPL v3
 * © 2025 Kiëd Llaentenn <kiedtl [at] protonmail [dot] com> LGPL v3
 
-* Media (Textures, Models, Sounds) license:** [CC-BY-SA 3.0 Unported]
+* **Media (Textures, Models, Sounds) license:** [CC-BY-SA 3.0 Unported]
