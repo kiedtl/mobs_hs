@@ -1,0 +1,61 @@
+# Max light level where spawn can occur
+# Livello massimo di luce dove puo' comparire
+mobs_hs.max_light (Max Light) int 12
+
+# Min light level where spawn can occur
+# Livello minimo di luce dove puo' comparire
+mobs_hs.min_light (Min Light) int 0
+
+# Spawn interval, in seconds
+# Intervallo di comparsa, in secondi
+mobs_hs.spawn_interval (Spawn Interval) int 45
+
+# Spawn chance, higher is less likely
+# Probabilita' di comparsa, maggiore e' e meno e' probabile
+mobs_hs.spawn_chance (Spawn Chance) int 500
+
+# Max number of spawned sentinels. Change this if you hate yourself.
+mobs_hs.active_object_count (Active Object Count) int 1
+
+# Min height where spawn can occur
+# Altezza minima dove puo' comparire
+mobs_hs.min_height (Min Height) int -30912
+
+# Max height where spawn can occur
+# Altezza massima dove puo' comparire
+mobs_hs.max_height (Max Height) int -15000
+
+# Min hit points
+# Punti salute minimi
+mobs_hs.hp_min (Min HP) int 50
+
+# Max hit points
+# Punti salute massimi
+mobs_hs.hp_max (Max HP) int 70
+
+# View range, stated in nodes. Higher == more fun (in the Dwarf Fortress sense).
+#
+# Raggio visivo, espresso in nodi
+mobs_hs.view_range (View Range) int 80
+
+# Fleshy damage dealt by melee attacks.
+mobs_hs.damage (Fleshy Damage Dealt) int 8
+
+# Fleshy damage dealt by projectile.
+mobs_hs.arrow_damage_fleshy (Fleshy Damage Dealt) int 7
+
+# Fire damage dealt by projectile.
+mobs_hs.arrow_damage_fire (Fleshy Damage Dealt) int 2
+
+# Use path finding?
+# 0 = no, 1 = yes, 2 = yes and build/destroy
+#
+# Usare la ricerca intelligente dei bersagli?
+# 0 = no, 1 = sì, 2 = sì e costruire/distruggere
+mobs_hs.pathfinding (Path Finding) int 2
+
+# Lifetime, in seconds
+mobs_hs.lifetimer (Lifetime) int 18000
+
+# Enable some additional debugging output.
+mobs_hs.debug (Debug mode) bool false
