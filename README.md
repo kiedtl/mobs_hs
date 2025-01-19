@@ -1,6 +1,11 @@
 # Hell Sentinel Minetest mod
 
-<img src="assets/Hell_Sentinel_DCSS.png" align=right width="10%" />
+<img src="assets/Hell_Sentinel_DCSS.png" align=right width="20%" />
+
+> *A towering monolith constructed and possessed by demonic forces. A
+> thousand eyes leer through slits in its jagged, spiked armour.*
+>
+> -- Dungeon Crawl Stone Soup
 
 Adds a fast, agile, and hard-hitting monster with damage reflection. The overall
 goal is to provide a quasi-boss mob who is dangerous for players with heavy
