@@ -8,31 +8,31 @@ mobs:register_mob("mobs_hs:hell_sentinel", {
 	hp_min = settings.hp_min,
 	hp_max = settings.hp_max,
 	armor = {
-		fleshy = 50,
-		burns = 0,
+		fleshy = 60,
+		burns = 40,
 	},
 	lifetimer = settings.lifetimer,
 
 	walk_velocity = 2.0,
 	-- He's a speedy boi
 	-- Also, surprise player who was observing and thinks it's slow :P
-	run_velocity = 12.0,
+	run_velocity = 9.0,
 
 	-- Sentinel, so stands around for a while, and occasionally moves around.
 	walk_chance = 10,
-	stand_change = 33,
+	stand_change = 50,
 
 	-- Yes, it's a sentinel, but looks a bit goofy
 	randomly_turn = false,
 
 	stay_near = {
-		nodes = { "default:lava", "default:obsidian", "default:steelblock" },
+		nodes = { "default:lava_source", "default:obsidian", "default:steelblock" },
 		chance = 33,
 	},
 
 	-- Agile and dangerous.
 	jump = true,
-	jump_height = 8,
+	jump_height = 3,
 	can_leap = true,
 	stepheight = 2.0,
 	view_range = settings.view_range,
@@ -59,7 +59,7 @@ mobs:register_mob("mobs_hs:hell_sentinel", {
 	attack_monsters = true,
 	attack_player = true,
 	damage = settings.damage,
-	reach = 3,
+	reach = 2,
 
 	arrow = "mobs_hs:hell_sentinel_arrow",
 	dogshoot_switch = 1,
@@ -73,7 +73,7 @@ mobs:register_mob("mobs_hs:hell_sentinel", {
 	pathfinding = settings.pathfinding,
 	makes_footstep_sound = true,
 	sounds = {
-		distance = settings.view_range * 8,
+		distance = settings.view_range * 2,
 		random = "mobs_hs_random",
 		war_cry = "mobs_hs_war_cry",
 		death = "mobs_hs_death",
@@ -115,17 +115,14 @@ mobs:register_mob("mobs_hs:hell_sentinel", {
 })
 
 mobs:register_arrow("mobs_hs:hell_sentinel_arrow", {
-	visual = "sprite",
-	visual_size = {x = 0.25, y = 0.25},
+	visual = "mesh",
+	--visual_size = {x = 0.25, y = 0.25},
+	mesh = "mobs_hs_hell_sentinel_arrow.glb",
 	textures = { "mobs_hell_sentinel_arrow.png" },
-	glow = 4,
-	tail = 1,
-	tail_texture = "mobs_hell_sentinel_arrow.png",
-	tail_size = 8,
+	glow = 12,
 	expire = 0.01,
 	velocity = 25,
 	lifetime = 18,
-	rotate = 90,
 
 	on_activate = function(self, staticdata, dtime_s)
 		-- make it indestructable

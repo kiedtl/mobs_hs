@@ -8,8 +8,8 @@ local explode_damage_radius = settings.explode_damage_radius
 
 function api.custom_on_attacked(self, hitter, time_from_last_punch, tool_cap, direction)
 	local my_armor = self.object:get_armor_groups()
-	local enemy_armor = hitter:get_armor_groups().fleshy or 100
-	local damage_fac = enemy_armor / 1.3 -- Portion of damage to reflect.
+	local enemy_armor = (hitter:get_armor_groups().fleshy or 100) / 100
+	local damage_fac = (1 / enemy_armor) * 0.75 -- Reflect ~75% of damage, for balance.
 
 	-- Messy and inaccurate, but I don't know of a better way
 	local damage_done = 0
@@ -20,6 +20,7 @@ function api.custom_on_attacked(self, hitter, time_from_last_punch, tool_cap, di
 		damage_done = damage_done + amount
 	end
 	damage_done = math.floor(damage_done)
+	--print("*** enemy armor: " .. enemy_armor .. "; damage_done: " .. damage_done .. "; damage inflicted: " .. damage_done * damage_fac)
 
 	hitter:punch(self.object, 1.0, {
 		full_punch_interval = 1.0,
