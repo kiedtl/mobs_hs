@@ -1,6 +1,6 @@
 # Hell Sentinel Minetest mod
 
-<img src="assets/Hell_Sentinel_DCSS.png" align=right />
+<img src="assets/Hell_Sentinel_DCSS.png" align=right width="90%" />
 
 Adds a fast, agile, and hard-hitting monster with damage reflection. The overall
 goal is to provide a quasi-boss mob who is dangerous for players with heavy
@@ -11,6 +11,8 @@ Wanted posters everywhere with your name on it.
 The monster, flavor (and to a lesser extent, behavior) of this monster was
 inspired by the [DCSS](http://crawl.chaosforge.org/Hell_Sentinel) enemy of the
 same name.
+
+<br />
 
 ![Hell Sentinel screenshot](assets/screenshot.png)
 
