@@ -52,7 +52,7 @@ mobs_hs.arrow_damage_fire (Fleshy Damage Dealt) int 2
 #
 # Usare la ricerca intelligente dei bersagli?
 # 0 = no, 1 = sì, 2 = sì e costruire/distruggere
-mobs_hs.pathfinding (Path Finding) int 2
+mobs_hs.pathfinding (Path Finding) int 1
 
 # Lifetime, in seconds
 mobs_hs.lifetimer (Lifetime) int 18000
