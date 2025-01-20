@@ -1,3 +1,7 @@
+-- Bundled from fluxionary's fmod.
+-- https://github.com/fluxionary/minetest-fmod/
+-- © fluxionary LGPL-v3
+--
 -- https://github.com/minetest/minetest/blob/master/builtin/settingtypes.txt
 -- https://github.com/minetest/minetest/blob/master/builtin/mainmenu/settings/settingtypes.lua
 
