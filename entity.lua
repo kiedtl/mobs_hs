@@ -97,18 +97,10 @@ mobs:register_mob("mobs_hs:hell_sentinel", {
 		punch_end = 380,
 		punch_speed = 45,
 	},
-	do_punch = function(...)
-		return api.custom_on_attacked(...)
-	end,
-	on_die = function(...)
-		return api.on_die(...)
-	end,
-	do_custom = function(...)
-		return api.do_custom(...)
-	end,
-	on_blast = function(...)
-		return api.on_blast(...)
-	end,
+	do_punch = api.custom_on_attacked,
+	on_die = api.on_die,
+	do_custom = api.do_custom,
+	on_blast = api.on_blast,
 	after_activate = function(self, staticdata, def, dtime)
 		api.heal(self, dtime)
 	end,
@@ -121,7 +113,7 @@ mobs:register_arrow("mobs_hs:hell_sentinel_arrow", {
 	textures = { "mobs_hell_sentinel_arrow.png" },
 	glow = 12,
 	expire = 0.01,
-	velocity = 2, --25,
+	velocity = 25,
 	lifetime = 18,
 	rotate = -90,
 

@@ -56,6 +56,3 @@ mobs_hs.pathfinding (Path Finding) int 1
 
 # Lifetime, in seconds
 mobs_hs.lifetimer (Lifetime) int 18000
-
-# Enable some additional debugging output.
-mobs_hs.debug (Debug mode) bool false

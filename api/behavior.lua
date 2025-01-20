@@ -1,6 +1,5 @@
 local api = mobs_hs.api
 local settings = mobs_hs.settings
-local inspect = mobs_hs.inspect
 
 local explodes_on_death = settings.explodes_on_death
 local explode_radius = settings.explode_radius

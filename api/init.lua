@@ -1,3 +1,1 @@
-mobs_hs.api = {}
-
-mobs_hs.dofile("api", "behavior")
+dofile(mobs_hs.modpath .. "api/behavior.lua")
