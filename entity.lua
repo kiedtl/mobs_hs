@@ -16,7 +16,7 @@ mobs:register_mob("mobs_hs:hell_sentinel", {
 	walk_velocity = 2.0,
 	-- He's a speedy boi
 	-- Also, surprise player who was observing and thinks it's slow :P
-	run_velocity = 9.0,
+	run_velocity = 12.0,
 
 	-- Sentinel, so stands around for a while, and occasionally moves around.
 	walk_chance = 10,
@@ -116,13 +116,14 @@ mobs:register_mob("mobs_hs:hell_sentinel", {
 
 mobs:register_arrow("mobs_hs:hell_sentinel_arrow", {
 	visual = "mesh",
-	--visual_size = {x = 0.25, y = 0.25},
-	mesh = "mobs_hs_hell_sentinel_arrow.glb",
+	visual_size = {x = 1.00, y = 1.00 },
+	mesh = "mobs_hs_hell_sentinel_arrow.obj",
 	textures = { "mobs_hell_sentinel_arrow.png" },
 	glow = 12,
 	expire = 0.01,
-	velocity = 25,
+	velocity = 2, --25,
 	lifetime = 18,
+	rotate = -90,
 
 	on_activate = function(self, staticdata, dtime_s)
 		-- make it indestructable
