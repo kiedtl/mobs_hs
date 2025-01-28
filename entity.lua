@@ -34,7 +34,7 @@ mobs:register_mob("mobs_hs:hell_sentinel", {
 	jump = true,
 	jump_height = 3,
 	can_leap = true,
-	stepheight = 2.0,
+	stepheight = 1.9,
 	view_range = settings.view_range,
 	knock_back = true, -- A bit too strong otherwise?
 	fear_height = 0,
@@ -83,7 +83,7 @@ mobs:register_mob("mobs_hs:hell_sentinel", {
 	visual_size = { x = 2, y = 2 },
 	collisionbox = { -0.8, -2.0, -0.8, 0.8, 2.5, 0.8 },
 	textures = { "mobs_hs_hell_sentinel.png" },
-	mesh = "mobs_hs_hell_sentinel.glb",
+	mesh = "mobs_hs_hell_sentinel.obj",
 	rotate = 180,
 	glow = 3,
 	animation = {
