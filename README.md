@@ -5,9 +5,9 @@
 > *A towering monolith constructed and possessed by demonic forces. A
 > thousand eyes leer through slits in its jagged, spiked armour.*
 >
-> -- Dungeon Crawl Stone Soup
+> -- Dungeon Crawl: Stone Soup
 
-Adds a fast, agile, and hard-hitting monster with damage reflection. The overall
+Adds a fast, agile, and hard-hitting monster with "revenge" damage. The overall
 goal is to provide a quasi-boss mob who is dangerous for players with heavy
 armor, but that nonetheless won't one-shot a naked noob. If you're a
 server admin, you can safely install this mob without your players putting up
@@ -21,12 +21,15 @@ same name.
 
 ![Hell Sentinel screenshot](assets/screenshot.png)
 
-(Yes, the textures and mesh are horrible. If you think you can do the DCSS
-sprite justice, *please* get in touch.)
+(Yes, the textures and mesh aren't great. If you think you can do the DCSS
+sprite justice, *or just improve the "feel" of the textures, please* get in
+touch.)
 
-**Version:** 2025-01-18
+**Version:** 2025-01-29
 
 **Dependencies:** default, mobs (mobs_redo)
+
+Optional dependencies: moreores, technic *(for spawn rules)*
 
 ## License
 
