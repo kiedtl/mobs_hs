@@ -2,14 +2,17 @@ local has = mobs_hs.has
 local settings = mobs_hs.settings
 
 local nodes = {
-	"moreores:stone_with_mithril",
 	"default:stone_with_diamond",
 	"default:stone_with_mese",
 	"default:stone_with_gold",
-	"moreores:stone_with_silver",
 	"default:stone_with_copper",
 	"default:stone_with_iron",
 }
+
+if minetest.get_modpath("moreores") then
+	nodes[#nodes + 1] = "moreores:stone_with_mithril"
+	nodes[#nodes + 1] = "moreores:stone_with_silver"
+end
 
 mobs:spawn({
 	name = "mobs_hs:hell_sentinel",
