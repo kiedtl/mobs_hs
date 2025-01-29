@@ -7,6 +7,7 @@ local nodes = {
 	"default:stone_with_gold",
 	"default:stone_with_copper",
 	"default:stone_with_iron",
+	"default:mese",
 }
 
 if minetest.get_modpath("moreores") then
