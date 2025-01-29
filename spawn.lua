@@ -15,6 +15,11 @@ if minetest.get_modpath("moreores") then
 	nodes[#nodes + 1] = "moreores:stone_with_silver"
 end
 
+if minetest.get_modpath("technic") then
+	nodes[#nodes + 1] = "technic:mineral_sulfur" -- Brimstone!
+	nodes[#nodes + 1] = "technic:mineral_lead"
+end
+
 mobs:spawn({
 	name = "mobs_hs:hell_sentinel",
 	nodes = nodes,
